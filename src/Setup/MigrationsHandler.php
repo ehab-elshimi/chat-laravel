@@ -4,6 +4,8 @@ namespace Launcher\Mercurius\Setup;
 
 use Illuminate\Support\Carbon;
 use Illuminate\Support\Arr;
+use Illuminate\Support\Str;
+
 /**
  * Timestamped Migrations handler.
  *
@@ -96,7 +98,7 @@ class MigrationsHandler
     private function migrationExists(string $migration)
     {
         return Arr::first($this->migrations, function ($m) use ($migration) {
-            return ends_with($m, $migration);
+            return Str::endsWith($m, $migration);
         });
     }
 }
