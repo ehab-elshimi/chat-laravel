@@ -1,0 +1,60 @@
+{
+    "name": "launcher/mercurius",
+    "description": " Real-time Messenger package for Laravel",
+    "type": "library",
+    "license": "MIT",
+    "homepage": "https://launcher.host/mercurius/",
+    "support": {
+        "issues": "https://github.com/launcher-host/mercurius/issues",
+        "source": "https://github.com/launcher-host/mercurius"
+    },
+    "keywords": [
+        "messenger",
+        "chat",
+        "pusher",
+        "web-sockets",
+        "php",
+        "laravel",
+        "vue"
+    ],
+    "authors": [
+        {
+            "name": "Bruno Torrinha <https://torrinha.com>"
+        }
+    ],
+    "require": {
+        "php": "^8.1",
+        "laravel/framework": "^9.52.4",
+        "pusher/pusher-php-server": "^7.2.2"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.5.10",
+        "mockery/mockery": "^1.5.1",
+        "orchestra/testbench": "^7.24.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "Launcher\\Mercurius\\": "src/",
+            "Launcher\\Mercurius\\Database\\Seeds\\": "publishable/database/seeds/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Launcher\\Mercurius\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "branch-alias": {
+        },
+        "laravel": {
+            "providers": [
+                "Launcher\\Mercurius\\MercuriusServiceProvider"
+            ],
+            "aliases": {
+                "Mercurius": "Launcher\\Mercurius\\Facades\\Mercurius"
+            }
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
