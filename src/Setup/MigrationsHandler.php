@@ -3,7 +3,7 @@
 namespace Launcher\Mercurius\Setup;
 
 use Illuminate\Support\Carbon;
-
+use Illuminate\Support\Arr;
 /**
  * Timestamped Migrations handler.
  *
