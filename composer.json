@@ -1,5 +1,5 @@
 {
-    "name": "launcher/afterupdates",
+    "name": "afterlauncher/afterupdates",
     "description": " Real-time Messenger package for Laravel",
     "type": "library",
     "license": "MIT",
