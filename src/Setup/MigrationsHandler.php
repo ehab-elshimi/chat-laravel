@@ -95,7 +95,7 @@ class MigrationsHandler
      */
     private function migrationExists(string $migration)
     {
-        return array_first($this->migrations, function ($m) use ($migration) {
+        return Arr::first($this->migrations, function ($m) use ($migration) {
             return ends_with($m, $migration);
         });
     }
