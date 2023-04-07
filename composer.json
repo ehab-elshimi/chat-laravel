@@ -1,5 +1,5 @@
 {
-    "name": "launcher/mercurius/updates*1",
+    "name": "launcher/afterupdates",
     "description": " Real-time Messenger package for Laravel",
     "type": "library",
     "license": "MIT",
